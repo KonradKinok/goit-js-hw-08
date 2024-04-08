@@ -15,8 +15,10 @@ fillFieldsAtBeginning(localStorageKey);
 const throttledCallback = throttle(throttledEventListener, 500);
 
 //Event Listeners
+//Input
 form.addEventListener('input', throttledCallback);
 
+//Submit
 form.addEventListener('submit', event => {
   event.preventDefault();
   const formFieldsData = load(localStorageKey);
