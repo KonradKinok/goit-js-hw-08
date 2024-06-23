@@ -23,7 +23,7 @@ form.addEventListener('submit', event => {
   event.preventDefault();
   const formFieldsData = load(localStorageKey);
   console.log(formFieldsData);
-  localStorage.removeItem(localStorageKey);
+  // localStorage.removeItem(localStorageKey);
   form.reset();
 });
 //--------------------------------------------Event Listeners
